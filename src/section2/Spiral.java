@@ -5,21 +5,17 @@ import org.jointheleague.graphical.robot.Robot;
 public class Spiral {
 
 	public static void main(String[] args) {
-		// 1. Create a new Robot
-		
-		// 5. Set your robot's pen down 
-		
-		// 3. Set the robot to go at max speed (100)
-		
-		// 4. Use a for loop to repeat steps #7 to #8, 75 times
-		
-			// 7. Change the pen color to random
-		
-			// 6. Move the robot 5 times the loop counter (5*i)
-			
-			// 2. Turn the robot 360/7 degrees to the right
-		
-			// 8. Set the pen width to i
-			
+		Robot k1b0 = new Robot();
+		k1b0.sparkle();
+		Robot.setWindowColor(255,255,255);
+		k1b0.penDown();
+		k1b0.setSpeed(100000000);
+		for (int i = 0; i < 360; i++) {
+		k1b0.setPenColor(00,00,00);
+		k1b0.move(2*i);
+		k1b0.turn(360/7);
+		k1b0.setPenWidth(2*i);
+		}	
 	}
 }
+            
